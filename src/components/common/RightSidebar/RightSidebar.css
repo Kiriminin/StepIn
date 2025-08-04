@@ -1,0 +1,172 @@
+.right-sidebar {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  transition: max-width 0.3s ease, padding 0.3s ease;
+  overflow: hidden;
+}
+
+.right-sidebar.closed {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.right-sidebar__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: linear-gradient(90deg, #A29BFE 75%, #6C5CE7 100%);
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.right-sidebar__user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ 
+}
+
+/* Аватарка слева */
+.right-sidebar__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Заголовок */
+.right-sidebar__title {
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  white-space: nowrap;
+}
+
+/* Блок иконок справа */
+.right-sidebar__icons {
+  display: flex;
+  gap: 10px;
+}
+
+.right-sidebar__icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+}
+
+.right-sidebar__icon:hover {
+    filter: brightness(1.5) invert(1);
+}
+
+.right-sidebar__icons button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.right-sidebar__icons img {
+  width: 20px;
+  height: 20px;
+  
+}
+
+.right-sidebar__content-wrapper {
+    overflow: hidden;
+    max-height: 1000px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 20px;
+}
+
+.right-sidebar__content-wrapper.closed {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.right-sidebar__search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.right-sidebar__search-wrapper {
+    position: relative;
+    flex: 1;
+}
+
+.right-sidebar__search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+    
+}
+
+.right-sidebar__search input {
+    width: 100%;
+    padding: 8px 12px 8px 32px;
+    border: 1px solid #6C5CE7;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+    color: #333;
+}
+
+.right-sidebar__search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-sidebar__search-button img {
+    width: 20px;
+    height: 20px;
+    filter: invert(0.4);
+}
+
+.right-sidebar__search-button:hover img {
+    filter: invert(0.8);
+}
+
+.right-sidebar__tabs {
+    display: flex;
+    width: 100%;
+}
+
+.right-sidebar__tabs button {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #6C5CE7;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 0;
+    text-align: center;
+    user-select: none;
+    border-bottom: 3px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.right-sidebar__tabs button.active {
+    color: #000;
+    border-bottom: 3px solid #6C5CE7;
+}

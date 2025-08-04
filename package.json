@@ -3,14 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@fontsource/rubik": "^5.2.6",
+=======
+>>>>>>> 73d59c9 (Commit)
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+<<<<<<< HEAD
     "react-router-dom": "^7.6.2",
+=======
+    "react-router-dom": "^7.6.3",
+>>>>>>> 73d59c9 (Commit)
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
