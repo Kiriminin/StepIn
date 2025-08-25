@@ -1,0 +1,136 @@
+.footer {
+    background-color: #6C5CE7;
+    padding: 40px 100px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer__columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 160px;
+    font-size: 16px;
+}
+
+.footer__icon-text {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px; 
+}
+
+.footer__icon-text img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.footer__icon-text strong {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;   
+}
+
+.footer__select-wrapper {
+    position: relative;
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+.footer__select-wrapper select {
+    width: 100%;
+    border: none;
+    appearance: none;
+    background: transparent;
+    outline: none;
+    padding-right: 30px;
+}
+
+.footer__select-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+.footer-help {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 40px;
+   margin-top: 40px;
+}
+
+.footer-help__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.footer__language {
+    margin-top: 40px;
+    font-size: 16px;
+    width: 265px;
+    position: relative;
+}
+
+.footer__select-wrapper {
+    position: relative;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    padding: 10px 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__select-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.footer__options {
+    position: relative;
+    top: 110%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    overflow:hidden;
+    z-index: 10;
+}   
+
+.footer__options div {
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.footer__options div:hover {
+    background-color: #f0f0f0;
+}
